@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AetherMind (AEM) - Pioneering the Future of AI</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    /* Global Styles */
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">AetherMind (AEM)</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#vision-mission">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#token">Token</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#roadmap">Roadmap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#involved">Get Involved</a>
+            </li>
+            <!-- Club Chat nav item triggers the chatbot modal -->
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="open-chatbot">Club Chat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with 3D Cube -->
+    <header id="hero">
+      <!-- Three.js canvas -->
+      <canvas id="hero-canvas"></canvas>
+      <!-- Text content placed under the cube -->
+      <div class="container content">
+        <h1 class="display-4">AetherMind (AEM)</h1>
+        <p class="lead">
+          Pioneering the Future of AI through Transparency, Innovation, and a
+          Community-Driven Ecosystem.
+        </p>
+        <a href="#involved" class="btn btn-primary btn-lg"
+          >Join Our Community</a
+        >
+      </div>
+    </header>
+
+    <!-- Vision & Mission Section -->
+    <section id="vision-mission" class="py-5 fade-in">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h2>Our Vision</h2>
+            <p>
+              To pioneer the future of AI by developing cutting-edge
+              technologies that enhance human capabilities and reshape
+              industries.
+            </p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <h2>Our Mission</h2>
+            <ul>
+              <li>
+                Develop AI-driven solutions for businesses and individuals.
+              </li>
+              <li>Promote transparency and ethical AI development.</li>
+              <li>
+                Create a community-driven ecosystem where users can contribute
+                to and benefit from AI advancements.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section id="features" class="bg-light py-5 fade-in">
+      <div class="container">
+        <h2 class="text-center mb-4">Core Features</h2>
+        <div class="row">
+          <!-- AI-Powered Solutions -->
+          <div class="col-md-4 text-center mb-4">
+            <div class="mb-3">
+              <i class="fas fa-robot fa-3x"></i>
+            </div>
+            <h4>AI-Powered Solutions</h4>
+            <p>
+              Leverage AI for automated decision-making, chatbots & virtual
+              assistants, and predictive analytics.
+            </p>
+          </div>
+          <!-- Blockchain Integration -->
+          <div class="col-md-4 text-center mb-4">
+            <div class="mb-3">
+              <i class="fas fa-lock fa-3x"></i>
+            </div>
+            <h4>Blockchain Integration</h4>
+            <p>
+              Ensure secure and decentralized AI training models, smart
+              contracts, and token-based rewards.
+            </p>
+          </div>
+          <!-- Community & Ecosystem -->
+          <div class="col-md-4 text-center mb-4">
+            <div class="mb-3">
+              <i class="fas fa-users fa-3x"></i>
+            </div>
+            <h4>Community & Ecosystem</h4>
+            <p>
+              Open-source development, collaborative research, and incentivized
+              participation drive innovation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AetherMind Token Section -->
+    <section id="token" class="py-5 fade-in">
+      <div class="container">
+        <h2 class="text-center mb-4">AetherMind Token (AEM)</h2>
+        <p class="text-center">
+          The native token powering our ecosystem – unlocking premium AI tools,
+          staking rewards, payments for insights, and governance.
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <ul class="list-group">
+              <li class="list-group-item">
+                ✅ Access to premium AI tools and services.
+              </li>
+              <li class="list-group-item">
+                ✅ Staking & rewards for AI model trainers.
+              </li>
+              <li class="list-group-item">
+                ✅ Payments for AI-generated insights and reports.
+              </li>
+              <li class="list-group-item">
+                ✅ Governance in the AetherMind ecosystem.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="bg-light py-5 fade-in">
+      <div class="container">
+        <h2 class="text-center mb-4">Roadmap</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th>Phase</th>
+                <th>Milestone</th>
+                <th>Expected Timeline</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Phase 1</td>
+                <td>Project Concept & Branding</td>
+                <td>✅ Completed</td>
+              </tr>
+              <tr>
+                <td>Phase 2</td>
+                <td>AI Model Development</td>
+                <td>Q1 2025</td>
+              </tr>
+              <tr>
+                <td>Phase 3</td>
+                <td>Blockchain & Smart Contracts</td>
+                <td>Q2 2025</td>
+              </tr>
+              <tr>
+                <td>Phase 4</td>
+                <td>Token Launch & Community Building</td>
+                <td>Q3 2025</td>
+              </tr>
+              <tr>
+                <td>Phase 5</td>
+                <td>Full-Scale Implementation</td>
+                <td>Q4 2025</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="involved" class="py-5 fade-in">
+      <div class="container">
+        <h2 class="text-center mb-4">How to Get Involved</h2>
+        <div class="row">
+          <!-- Social Media -->
+          <div class="col-md-4 text-center mb-4">
+            <h4>Join Our Community</h4>
+            <p>
+              Connect with us on social media and be part of the conversation.
+            </p>
+            <a
+              href="https://x.com/aethermind__?s=21"
+              target="_blank"
+              class="btn btn-outline-primary"
+              >Follow Us</a
+            >
+          </div>
+          <!-- AI Training Programs -->
+          <div class="col-md-4 text-center mb-4">
+            <h4>Participate in AI Training</h4>
+            <p>
+              Engage in training programs and contribute to our AI model
+              development.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Learn More</a>
+          </div>
+          <!-- Collaborative Research -->
+          <div class="col-md-4 text-center mb-4">
+            <h4>Collaborate on Research</h4>
+            <p>
+              Join our platform for collaborative AI and blockchain research.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Collaborate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Club Chat Modal (Chatbot) -->
+    <div
+      class="modal fade"
+      id="chatbotModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="chatbotModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="chatbotModalLabel">Chat with botme</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="chatbot-messages">
+              <!-- Initial welcome message from botme -->
+              <div class="chat-message bot">
+                Hello there! I'm botme, your witty and fun assistant. Ask me
+                anything!
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer d-flex">
+            <input
+              type="text"
+              id="chatbot-input"
+              class="form-control"
+              placeholder="Type your message..."
+            />
+            <button
+              type="button"
+              id="chatbot-send"
+              class="btn btn-primary ml-2"
+            >
+              Send
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back-to-Top Button -->
+    <button id="back-to-top" class="btn btn-primary">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>&copy; 2025 AetherMind. All Rights Reserved.</p>
+        <p>
+          <a href="#" class="text-white">Privacy Policy</a> |
+          <a href="#" class="text-white">Terms of Use</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Three.js Library from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

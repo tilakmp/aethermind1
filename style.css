@@ -1,0 +1,109 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0; /* Slightly darker gray background */
+}
+/* Navbar */
+.navbar-nav .nav-item + .nav-item {
+  margin-left: 1rem;
+}
+/* Hero Section */
+#hero {
+  background-color: #222; /* Dark background for an elegant feel */
+  text-align: center;
+  color: #fff;
+}
+/* Canvas for 3D Scene */
+#hero-canvas {
+  display: block;
+  width: 100%;
+  height: 70vh; /* 70% of viewport height */
+}
+/* Content below the canvas with reduced spacing */
+#hero .content {
+  padding: 0.5rem 1rem;
+  margin-top: -1rem;
+}
+/* Section Headings */
+section h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+/* Fade-In Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+/* Back-to-Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 1000;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Footer Links */
+footer a {
+  text-decoration: none;
+}
+/* Chatbot Modal Styles */
+.modal-dialog {
+  max-width: 600px;
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.modal-body {
+  padding: 1rem;
+  background-color: #fff;
+}
+#chatbot-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+.chat-message {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  max-width: 75%;
+  word-break: break-word;
+}
+.chat-message.bot {
+  background-color: #f1f1f1;
+  color: #333;
+  align-self: flex-start;
+}
+.chat-message.user {
+  background-color: #007bff;
+  color: #fff;
+  align-self: flex-end;
+  margin-left: auto;
+}
+/* Input styling for chatbot */
+#chatbot-input {
+  flex-grow: 1;
+  margin-right: 0.5rem;
+}
